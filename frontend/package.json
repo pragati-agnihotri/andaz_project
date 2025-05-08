@@ -1,6 +1,10 @@
 {
   "name": "frontend",
   "version": "0.1.0",
+  "allowedHosts": [
+    "localhost"
+  ],
+  "proxy" : "https://andaz-project-rhb3.vercel.app/",
   "private": true,
   "scripts": {
     "dev": "next dev",
