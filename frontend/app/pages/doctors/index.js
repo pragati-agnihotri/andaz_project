@@ -12,7 +12,7 @@ export default function DoctorsPage() {
 
   const fetchDoctors = async () => {
     const { gender, rating, feeMin, feeMax } = filters;
-    const res = await axios.get(`http://localhost:5000/api/doctors/list-doctor-with-filter`, {
+    const res = await axios.get(`https://andaz-project-rhb3.vercel.app/api/doctors/list-doctor-with-filter`, {
       params: { page, limit: 6, gender, rating, feeMin, feeMax }
     });
     setDoctors(res.data.data);
