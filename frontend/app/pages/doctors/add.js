@@ -34,7 +34,7 @@ export default function AddDoctor() {
         experience: parseFloat(formData.experience)
       };
       console.log(payload)
-      await axios.post('http://localhost:5000/api/doctors/add-doctor', payload);
+      await axios.post('https://andaz-project-rhb3.vercel.app/api/doctors/add-doctor', payload);
       alert('Doctor added successfully!');
       router.push('/');
     } catch (error) {
